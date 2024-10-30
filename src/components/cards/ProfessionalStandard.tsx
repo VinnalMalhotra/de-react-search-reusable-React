@@ -11,6 +11,7 @@ const ProfessionalStandard = ({ result }: CardProps<any>) => {
     id,
     description,
     headshot,
+    primaryPhoto,
     mainPhone,
     hours,
     landingPageUrl,
@@ -24,14 +25,14 @@ const ProfessionalStandard = ({ result }: CardProps<any>) => {
 
   return (
     <article className="border rounded-lg flex justify-between  pr-4">
-      <header className="relative flex flex-col w-1/6">
+      <header className="relative flex flex-col w-1/8">
         <a
           href={landingPageUrl}
           className=" group aspect-square block   overflow-hidden rounded-t-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100"
         >
-          {headshot && (
+          {primaryPhoto && (
             <Image
-              image={headshot!}
+              image={headshot || primaryPhoto!}
               className="pointer-events-none object-cover group-hover:opacity-75"
             />
           )}

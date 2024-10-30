@@ -72,7 +72,7 @@ export const VerticalConfig: VerticalProps[] = [
     label: "Products",
     key: "product",
     pageType: "grid-cols-3",
-    cardType: ProfessionalStandard,
+    cardType: ProductProminentImage,
     universalLimit: 3,
     sortByOptions: [
       {
